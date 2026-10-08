@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>PARISA HOME | Creating Comfort — Premium Xalatlar, Sochiqlar va To'plamlar</title>
+    <title>PARISA HOME ESTERI | Creating Comfort — Premium Sochiqlar & Xalatlar</title>
 
     <!-- Tailwind CSS & Font Awesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
-    <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,15 +20,15 @@
                 extend: {
                     colors: {
                         parisa: {
-                            forest: '#0B2D26',     // Asl logodagi chuqur zumrad rang
+                            forest: '#0B2D26',     // Logodagi chuqur zumrad rang
                             forestDark: '#051814',
                             forestLight: '#14463C',
                             gold: '#C9A96E',       // Oltin/krem harflar rangi
                             goldLight: '#E5D3B3',
                             goldDark: '#A68446',
-                            sand: '#F7F4EE',       // Qulay fon
+                            sand: '#F7F4EE',
                             cream: '#FAF7F2',
-                            uzum: '#7000FF',       // Uzum Nasiya brand violet
+                            uzum: '#7000FF',       // Uzum Nasiya brand binafsha
                             uzumLight: '#F3EBFF'
                         }
                     },
@@ -42,22 +42,13 @@
     </script>
     <style>
         .parisa-glass {
-            background: rgba(247, 244, 238, 0.92);
+            background: rgba(247, 244, 238, 0.94);
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
         }
-        .gold-border {
-            border: 1px solid rgba(201, 169, 110, 0.35);
-        }
-        .gold-gradient {
-            background: linear-gradient(135deg, #C9A96E 0%, #A68446 100%);
-        }
-        .uzum-gradient {
-            background: linear-gradient(135deg, #7000FF 0%, #4D00B3 100%);
-        }
-        .forest-gradient {
-            background: linear-gradient(135deg, #0B2D26 0%, #051814 100%);
-        }
+        .gold-border { border: 1px solid rgba(201, 169, 110, 0.35); }
+        .forest-gradient { background: linear-gradient(135deg, #0B2D26 0%, #051814 100%); }
+        .uzum-gradient { background: linear-gradient(135deg, #7000FF 0%, #4D00B3 100%); }
         ::-webkit-scrollbar { width: 5px; height: 5px; }
         ::-webkit-scrollbar-track { background: #F7F4EE; }
         ::-webkit-scrollbar-thumb { background: #C9A96E; border-radius: 4px; }
@@ -65,48 +56,59 @@
 </head>
 <body class="bg-parisa-sand text-[#2C2C2C] font-sans antialiased selection:bg-parisa-forest selection:text-white pb-24 md:pb-12">
 
-    <!-- TOP ANNOUNCEMENT BANNER -->
-    <div class="bg-parisa-forest text-parisa-goldLight text-[11px] sm:text-xs py-2 px-3 text-center tracking-wider uppercase font-medium flex items-center justify-center gap-2 border-b border-parisa-gold/20">
-        <span class="bg-parisa-uzum text-white text-[10px] font-bold px-2 py-0.5 rounded tracking-normal">UZUM NASIYA</span>
-        <span>Barcha xalat va sochiqlarga 3, 6, 12 oyga foizsiz bo'lib to'lash imkoniyati! Bepul yetkazib berish.</span>
+    <!-- TOP PROMO & CONTACT BAR -->
+    <div class="bg-parisa-forest text-parisa-goldLight text-[11px] sm:text-xs py-2 px-3 text-center tracking-wider font-medium flex flex-wrap items-center justify-center gap-x-4 gap-y-1 border-b border-parisa-gold/20">
+        <div class="flex items-center gap-1.5">
+            <span class="bg-parisa-uzum text-white text-[10px] font-bold px-2 py-0.5 rounded">UZUM NASIYA</span>
+            <span>3, 6, 12 oyga foizsiz bo'lib to'lash</span>
+        </div>
+        <div class="hidden md:flex items-center gap-3 text-parisa-gold">
+            <span>•</span>
+            <a href="tel:+998971154666" class="hover:underline flex items-center gap-1">
+                <i class="fa-solid fa-phone text-[10px]"></i> +998 97 115 46 66 (Ikrom)
+            </a>
+            <span>•</span>
+            <a href="https://maps.app.goo.gl/tH5SmJKzrXd6pTM86" target="_blank" class="hover:underline flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-[10px]"></i> Shourum: Toshkent, Goody
+            </a>
+        </div>
     </div>
 
     <!-- MAIN HEADER -->
     <header class="sticky top-0 z-40 parisa-glass border-b border-parisa-gold/20 shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
-            <!-- Brand Logo -->
+            <!-- Logo & Brand Name -->
             <a href="/" class="flex items-center gap-3 group">
                 <div class="w-12 h-12 rounded-full overflow-hidden bg-parisa-forest border border-parisa-gold/40 p-1 flex items-center justify-center shadow-md">
                     <img src="/static/logo.png" alt="Parisa Home Logo" class="w-full h-full object-contain">
                 </div>
                 <div>
                     <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-parisa-forest block leading-none">Parisa Home</span>
-                    <span class="text-[9px] uppercase tracking-[0.25em] text-parisa-gold font-semibold block mt-1">Creating Comfort</span>
+                    <span class="text-[9px] uppercase tracking-[0.22em] text-parisa-gold font-semibold block mt-1">ESTERI • VERONA HOME</span>
                 </div>
             </a>
 
-            <!-- Desktop Nav Links -->
-            <nav class="hidden md:flex items-center gap-8 font-medium text-xs tracking-wider uppercase text-gray-700">
+            <!-- Nav Links Desktop -->
+            <nav class="hidden md:flex items-center gap-7 font-medium text-xs tracking-wider uppercase text-gray-700">
                 <a href="#catalog" class="hover:text-parisa-gold transition">Katalog</a>
-                <a href="#uzum-nasiya" class="hover:text-parisa-uzum text-parisa-uzum font-bold flex items-center gap-1 transition">
-                    <i class="fa-solid fa-bolt"></i> Uzum Nasiya (0%)
+                <a href="#uzum-nasiya" class="text-parisa-uzum font-bold flex items-center gap-1 hover:opacity-80 transition">
+                    <i class="fa-solid fa-bolt"></i> Uzum Nasiya
                 </a>
-                <a href="#about" class="hover:text-parisa-gold transition">Sifat & Matolar</a>
-                <a href="#reviews" class="hover:text-parisa-gold transition">Mijozlar Fikri</a>
-                <a href="https://t.me/parisa_home_esteri" target="_blank" class="text-sky-600 hover:text-sky-700 flex items-center gap-1">
-                    <i class="fa-brands fa-telegram"></i> Telegram Kanal
+                <a href="#hotel-section" class="hover:text-parisa-gold transition">Mehmonxona & SPA</a>
+                <a href="#contacts" class="hover:text-parisa-gold transition">Aloqa & Shourum</a>
+                <a href="https://t.me/parisa_home_esteri" target="_blank" class="text-sky-600 hover:text-sky-700 flex items-center gap-1 font-bold">
+                    <i class="fa-brands fa-telegram"></i> @parisa_home_esteri
                 </a>
             </nav>
 
-            <!-- Actions (Cart & AI) -->
+            <!-- Actions -->
             <div class="flex items-center gap-3">
                 <button onclick="toggleChat(true)" class="hidden sm:flex items-center gap-2 bg-white text-parisa-forest border border-parisa-gold/40 px-3.5 py-2 rounded-full text-xs font-semibold hover:border-parisa-gold shadow-xs transition">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span>Parisa AI Stilist</span>
+                    <span>Parisa AI</span>
                 </button>
 
-                <!-- Savatcha tugmasi -->
                 <button onclick="openCartDrawer()" class="relative bg-parisa-forest text-parisa-goldLight px-4 py-2.5 rounded-full text-xs font-semibold shadow-md hover:bg-parisa-forestLight transition flex items-center gap-2">
                     <i class="fa-solid fa-bag-shopping text-parisa-gold"></i>
                     <span class="hidden sm:inline">Savatcha</span>
@@ -116,71 +118,69 @@
         </div>
     </header>
 
-    <!-- HERO SECTION (LUXURY ATMOSPHERE) -->
-    <section class="relative overflow-hidden pt-10 pb-16 lg:py-20 bg-gradient-to-b from-[#F2ECE1] to-parisa-sand">
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden pt-8 pb-14 lg:py-16 bg-gradient-to-b from-[#F2ECE1] to-parisa-sand">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
-                <!-- Left text content -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 bg-white/80 border border-parisa-gold/40 text-parisa-forest text-[11px] sm:text-xs font-semibold px-4 py-1.5 rounded-full shadow-xs">
-                        <i class="fa-solid fa-crown text-parisa-gold"></i>
-                        <span>Premium Turk & Egey Matolari Kolleksiyasi</span>
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/90 border border-parisa-gold/40 text-parisa-forest text-[11px] font-semibold px-4 py-1.5 rounded-full shadow-xs">
+                        <i class="fa-solid fa-gem text-parisa-gold"></i>
+                        <span>Parisa, Esteri va Verona Home Rasmiy Shourumi</span>
                     </div>
 
-                    <h1 class="font-serif text-4xl sm:text-6xl text-parisa-forest font-bold leading-tight tracking-tight">
-                        Uyingizda haqiqiy <span class="italic text-parisa-gold">5 yulduzli</span> orom va nafislik
+                    <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl text-parisa-forest font-bold leading-tight tracking-tight">
+                        Sifat • Nafosat • <span class="italic text-parisa-gold">Qulaylik</span> Dunyosi
                     </h1>
 
-                    <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
-                        Har bir xalat va sochiq — terini erkalovchi tabiiy bambuk hamda organik paxtadan tikilgan. Endi sevimli to'plamingizni <b>Uzum Nasiya orqali oyiga 46 000 so'mdan</b> boshlab bo'lib to'lashingiz mumkin.
+                    <p class="text-gray-600 text-xs sm:text-sm max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Model D.272 Havana xalatlari (600 gr/m²), Model-News J 250, Florya va oq mehmonxona sochiqlari to'plami. Uyingiz va mehmonxonangiz uchun oliy darajadagi qulaylik!
                     </p>
 
                     <!-- Trust Cards -->
-                    <div class="grid grid-cols-3 gap-3 pt-2 max-w-md mx-auto lg:mx-0">
+                    <div class="grid grid-cols-3 gap-2 sm:gap-3 pt-2 max-w-md mx-auto lg:mx-0">
                         <div class="bg-white p-3 rounded-2xl border border-parisa-gold/20 shadow-xs text-center">
-                            <div class="font-serif text-xl sm:text-2xl font-bold text-parisa-forest">100%</div>
-                            <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">Organik Paxta</div>
+                            <div class="font-serif text-lg sm:text-xl font-bold text-parisa-forest">600 gr/m²</div>
+                            <div class="text-[9px] text-gray-500 uppercase tracking-wider mt-0.5">Maksimal Zichlik</div>
                         </div>
                         <div class="bg-white p-3 rounded-2xl border border-parisa-gold/20 shadow-xs text-center">
-                            <div class="font-serif text-xl sm:text-2xl font-bold text-parisa-uzum">0%</div>
-                            <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">Uzum Nasiya</div>
+                            <div class="font-serif text-lg sm:text-xl font-bold text-parisa-uzum">0% Oldindan</div>
+                            <div class="text-[9px] text-gray-500 uppercase tracking-wider mt-0.5">Uzum Nasiya</div>
                         </div>
                         <div class="bg-white p-3 rounded-2xl border border-parisa-gold/20 shadow-xs text-center">
-                            <div class="font-serif text-xl sm:text-2xl font-bold text-parisa-gold">24/7</div>
-                            <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">AI Stilist</div>
+                            <div class="font-serif text-lg sm:text-xl font-bold text-parisa-gold">100%</div>
+                            <div class="text-[9px] text-gray-500 uppercase tracking-wider mt-0.5">Toza Paxta</div>
                         </div>
                     </div>
 
-                    <!-- Call to action -->
-                    <div class="flex flex-col sm:flex-row gap-3 pt-4 justify-center lg:justify-start">
-                        <a href="#catalog" class="forest-gradient text-parisa-goldLight px-8 py-4 rounded-full font-semibold text-xs uppercase tracking-widest shadow-lg hover:shadow-xl transition flex items-center justify-center gap-3">
-                            <span>Kolleksiyani Ko'rish</span>
+                    <!-- Call To Action -->
+                    <div class="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
+                        <a href="#catalog" class="forest-gradient text-parisa-goldLight px-7 py-3.5 rounded-full font-semibold text-xs uppercase tracking-widest shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+                            <span>Katalogni Ko'rish</span>
                             <i class="fa-solid fa-arrow-right text-parisa-gold"></i>
                         </a>
-                        <button onclick="toggleChat(true)" class="bg-white border border-parisa-forest text-parisa-forest px-6 py-4 rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-parisa-forest hover:text-white transition flex items-center justify-center gap-2 shadow-xs">
-                            <i class="fa-solid fa-wand-magic-sparkles text-parisa-gold"></i>
-                            <span>Razmer Tanlashda Yordam</span>
-                        </button>
+                        <a href="tel:+998971154666" class="bg-white border border-parisa-forest text-parisa-forest px-6 py-3.5 rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-parisa-forest hover:text-white transition flex items-center justify-center gap-2 shadow-xs">
+                            <i class="fa-solid fa-phone text-parisa-gold"></i>
+                            <span>+998 97 115 46 66</span>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Right visual banner -->
+                <!-- Right Visual: Havana Real Robe photo from channel -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative max-w-sm sm:max-w-md mx-auto">
-                        <div class="absolute -inset-2 rounded-3xl bg-parisa-gold/30 blur-xl"></div>
-                        <div class="relative rounded-3xl overflow-hidden bg-parisa-forest border-2 border-parisa-gold/40 shadow-2xl aspect-[4/5]">
-                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Parisa Luxury Robe" class="w-full h-full object-cover">
+                        <div class="absolute -inset-2 rounded-3xl bg-parisa-gold/20 blur-xl"></div>
+                        <div class="relative rounded-3xl overflow-hidden bg-parisa-forest border border-parisa-gold/40 shadow-2xl aspect-[4/5]">
+                            <img src="https://cdn4.telesco.pe/file/g5hxFAJ25SLWf4B-P1usBmdtUx3A7dsYEXn19hUl0q48U-qL-GNKXebwFrePaVBH_okIXFKfZ_bRfBUEajdgGHUuOdSxiBcvEAYuViTVz_WTbxt-i-LIpF4U-GSuaiES51eHo0rcUcpo5E8WfbtvLbJrk4PPsHc02_FOkZBi7wFyuco27cbKao00UKZhM-2sGDjWxEw850aUoXB7_4Z_uwvPZtHHFqRIldKDZclZXUaVzlt-h6VI4TOwVoxQvyMG2leNYqIyNEifgPGHK5KtV0XeXT_jJ9CgulernwRFM5IIDEq4_KPAQ_HkpKLGJ4a-M3wLYUR3-B49Gry7zOdb2Q.jpg" alt="Model D.272 Havana Robe" class="w-full h-full object-cover">
                             
-                            <!-- Floating Pill Badge -->
-                            <div class="absolute bottom-4 inset-x-4 p-4 rounded-2xl bg-parisa-forest/90 backdrop-blur-md border border-parisa-gold/40 text-white flex items-center justify-between">
+                            <div class="absolute bottom-3 inset-x-3 p-3.5 rounded-2xl bg-parisa-forest/90 backdrop-blur-md border border-parisa-gold/40 text-white flex items-center justify-between">
                                 <div>
-                                    <span class="text-[10px] uppercase text-parisa-gold font-bold tracking-wider block">Royal Velour Xalat</span>
-                                    <span class="font-serif text-lg font-bold">580 000 so'm</span>
+                                    <span class="text-[9px] uppercase text-parisa-gold font-bold tracking-wider block">Model-D.272 Havana</span>
+                                    <span class="font-serif text-lg font-bold">540 000 so'm</span>
                                 </div>
                                 <div class="text-right">
-                                    <span class="bg-parisa-uzum text-white text-[10px] font-bold px-2 py-0.5 rounded">Uzum Nasiya</span>
-                                    <span class="text-[11px] block text-parisa-goldLight mt-0.5">oyiga 64 000 so'm</span>
+                                    <span class="bg-parisa-uzum text-white text-[9px] font-bold px-2 py-0.5 rounded">Uzum Nasiya</span>
+                                    <span class="text-[10px] block text-parisa-goldLight mt-0.5">oyiga 59 400 so'm</span>
                                 </div>
                             </div>
                         </div>
@@ -191,280 +191,318 @@
         </div>
     </section>
 
-    <!-- SECTION: UZUM NASIYA BANNER (BO'LIB TO'LASH) -->
-    <section id="uzum-nasiya" class="py-8 bg-parisa-uzumLight border-y border-purple-200">
+    <!-- SECTION: UZUM NASIYA PROMO -->
+    <section id="uzum-nasiya" class="py-6 bg-parisa-uzumLight border-y border-purple-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="space-y-2 text-center md:text-left">
-                    <div class="inline-flex items-center gap-2 bg-purple-100 text-parisa-uzum text-xs font-bold px-3 py-1 rounded-full">
-                        <i class="fa-solid fa-credit-card"></i>
-                        <span>Rasmiy Hamkorlik</span>
+            <div class="bg-white rounded-3xl p-5 sm:p-6 border border-purple-100 shadow-xs flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="space-y-1 text-center md:text-left">
+                    <div class="inline-flex items-center gap-1.5 text-parisa-uzum text-[11px] font-bold">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Rasmiy Bo'lib To'lash Integratsiyasi</span>
                     </div>
-                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-gray-900">
+                    <h3 class="text-xl sm:text-2xl font-serif font-bold text-gray-900">
                         Uzum Nasiya orqali 3, 6 va 12 oyga bo'lib to'lang
                     </h3>
-                    <p class="text-xs sm:text-sm text-gray-600 max-w-xl">
-                        Boshlang'ich to'lov — <b>0 so'm</b>. Hech qanday kafillarsiz, faqat pasport va bank kartasi orqali to'g'ridan-to'g'ri saytimizdan tasdiqlanadi.
+                    <p class="text-xs text-gray-600">
+                        Boshlang'ich to'lov — 0 so'm. Pasport va karta orqali darhol sayt orqali tasdiqlanadi.
                     </p>
                 </div>
 
-                <div class="flex items-center gap-3 shrink-0">
-                    <div class="text-center p-3 bg-purple-50 rounded-2xl border border-purple-200 min-w-[90px]">
-                        <div class="text-xs font-bold text-gray-500">3 OYGA</div>
-                        <div class="text-sm font-extrabold text-parisa-uzum mt-1">36% gacha</div>
+                <div class="flex items-center gap-2 shrink-0">
+                    <div class="text-center p-2.5 bg-purple-50 rounded-xl border border-purple-200 min-w-[85px]">
+                        <div class="text-[10px] font-bold text-gray-500">3 OY</div>
+                        <div class="text-xs font-extrabold text-parisa-uzum mt-0.5">Qulay</div>
                     </div>
-                    <div class="text-center p-3 bg-purple-50 rounded-2xl border border-purple-200 min-w-[90px]">
-                        <div class="text-xs font-bold text-gray-500">6 OYGA</div>
-                        <div class="text-sm font-extrabold text-parisa-uzum mt-1">Qulay to'lov</div>
+                    <div class="text-center p-2.5 bg-purple-50 rounded-xl border border-purple-200 min-w-[85px]">
+                        <div class="text-[10px] font-bold text-gray-500">6 OY</div>
+                        <div class="text-xs font-extrabold text-parisa-uzum mt-0.5">Ommabop</div>
                     </div>
-                    <div class="text-center p-3 bg-purple-100 rounded-2xl border-2 border-parisa-uzum min-w-[90px]">
-                        <div class="text-xs font-bold text-parisa-uzum">12 OYGA</div>
-                        <div class="text-sm font-extrabold text-parisa-uzum mt-1">Eng arzon</div>
+                    <div class="text-center p-2.5 bg-purple-100 rounded-xl border-2 border-parisa-uzum min-w-[85px]">
+                        <div class="text-[10px] font-bold text-parisa-uzum">12 OY</div>
+                        <div class="text-xs font-extrabold text-parisa-uzum mt-0.5">Eng arzon</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION: MAHSULOTLAR KATALOGI (CATEGORIES + GRID) -->
-    <section id="catalog" class="py-16 bg-parisa-sand">
+    <!-- SECTION: MAHSULOTLAR KATALOGI (TELEGRAM POSTLARI BO'YICHA) -->
+    <section id="catalog" class="py-14 bg-parisa-sand">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-2xl mx-auto mb-10">
-                <span class="text-parisa-gold font-bold text-xs uppercase tracking-[0.2em]">Eksklyuziv To'plamlar</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-parisa-forest mt-1">Parisa Home Katalogi</h2>
-                <p class="text-gray-500 text-xs sm:text-sm mt-2">
-                    Xalatlar, sochiqlar, choyshablar va ipak pijamalar — barchasi uyingiz qulayligi uchun.
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="text-parisa-gold font-bold text-xs uppercase tracking-[0.2em]">Telegram Kanalimizdagi Asl Mahsulotlar</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-parisa-forest mt-1">Parisa Home Esteri To'plamlari</h2>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">
+                    Barcha modellar original zavod narxlarida va bo'lib to'lash imkoniyati bilan.
                 </p>
             </div>
 
             <!-- Kategoriya tablari -->
             <div class="flex items-center justify-center gap-2 overflow-x-auto pb-4 mb-8" id="category-tabs">
-                <button onclick="filterCategory('all')" id="cat-all" class="cat-btn bg-parisa-forest text-parisa-goldLight px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition shadow-sm">
+                <button onclick="filterCategory('all')" id="cat-all" class="cat-btn bg-parisa-forest text-parisa-goldLight px-4 py-2 rounded-full text-xs font-bold uppercase transition shadow-xs">
                     Barchasi
                 </button>
-                <button onclick="filterCategory('robes')" id="cat-robes" class="cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition border border-parisa-gold/20 shadow-xs">
-                    Xalatlar
+                <button onclick="filterCategory('robes')" id="cat-robes" class="cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-4 py-2 rounded-full text-xs font-semibold uppercase transition border border-parisa-gold/20 shadow-xs">
+                    Havana Xalatlar
                 </button>
-                <button onclick="filterCategory('towels')" id="cat-towels" class="cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition border border-parisa-gold/20 shadow-xs">
-                    Sochiqlar
+                <button onclick="filterCategory('towels')" id="cat-towels" class="cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-4 py-2 rounded-full text-xs font-semibold uppercase transition border border-parisa-gold/20 shadow-xs">
+                    Sochiqlar (News J, Florya)
                 </button>
-                <button onclick="filterCategory('bedding')" id="cat-bedding" class="cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition border border-parisa-gold/20 shadow-xs">
-                    Yotoq To'plamlari
+                <button onclick="filterCategory('hotel_collection')" id="cat-hotel_collection" class="cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-4 py-2 rounded-full text-xs font-semibold uppercase transition border border-parisa-gold/20 shadow-xs">
+                    Hotel & SPA
                 </button>
-                <button onclick="filterCategory('pajamas')" id="cat-pajamas" class="cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition border border-parisa-gold/20 shadow-xs">
-                    Ipak Pijamalar
+                <button onclick="filterCategory('bedding')" id="cat-bedding" class="cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-4 py-2 rounded-full text-xs font-semibold uppercase transition border border-parisa-gold/20 shadow-xs">
+                    EMEN Choyshablar
                 </button>
             </div>
 
-            <!-- Mahsulotlar ro'yxati -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid">
-                <!-- Javascript dinamik joylaydi -->
+            <!-- Mahsulotlar Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="products-grid">
             </div>
 
         </div>
     </section>
 
-    <!-- SECTION: SIFAT VA MATOLAR HAQIDA -->
-    <section id="about" class="py-16 bg-parisa-cream border-t border-parisa-gold/20">
+    <!-- SECTION: MEHMONXONA & ULGURJI BUYURTMALAR (@Parisa_otel) -->
+    <section id="hotel-section" class="py-14 bg-parisa-cream border-t border-parisa-gold/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
-                <div class="space-y-6">
-                    <span class="text-parisa-gold font-bold text-xs uppercase tracking-widest">Nega aynan Parisa Home?</span>
-                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-parisa-forest leading-snug">
-                        Har bir detalda oliy sifat, mustahkam choklar va tabiiy qulaylik
+                <div class="lg:col-span-7 space-y-4">
+                    <span class="text-parisa-gold font-bold text-xs uppercase tracking-widest">Hotel Textile • Mehmonxona To'plamlari</span>
+                    <h3 class="font-serif text-2xl sm:text-4xl font-bold text-parisa-forest">
+                        Oq Mehmonxona Sochiqlari va Xalatlari (Ulgurji & Chakana)
                     </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Biz faqat sertifikatlangan, kimyoviy ishlovsiz tabiiy tolalardan foydalanamiz. Matolarimiz bir necha o'nlab yuvishdan keyin ham o'zining asl rangi, mayinligi va jozibasini saqlab qoladi.
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Mehmonxonalar, sanatoriylar, dam olish maskanlari va SPA komplekslar uchun <b>450 gr/m², 550 gr/m² va 650 gr/m²</b> zichlikdagi oq sochiqlar va vafli xalatlar yetkazib beramiz.
                     </p>
 
-                    <div class="space-y-4 pt-2 text-xs">
-                        <div class="flex items-start gap-3.5">
-                            <div class="w-8 h-8 rounded-full bg-parisa-forest text-parisa-gold flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-leaf"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 text-sm">Gipoallergen Tabiiy Tolalar</h4>
-                                <p class="text-gray-500 mt-0.5">Eng sezgir teri egalari va bolalar uchun ham mutlaqo bezarar.</p>
-                            </div>
+                    <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
+                        <div class="bg-white p-3 rounded-2xl border border-parisa-gold/20">
+                            <span class="font-bold text-parisa-forest block">Tozalik va Ishonch</span>
+                            <span class="text-gray-500 text-[11px]">Oqartirish va dezinfeksiya qilishga o'ta chidamli</span>
                         </div>
+                        <div class="bg-white p-3 rounded-2xl border border-parisa-gold/20">
+                            <span class="font-bold text-parisa-forest block">Ulgurji Narxlar</span>
+                            <span class="text-gray-500 text-[11px]">Katta buyurtmalar uchun maxsus shartnoma</span>
+                        </div>
+                    </div>
 
-                        <div class="flex items-start gap-3.5">
-                            <div class="w-8 h-8 rounded-full bg-parisa-forest text-parisa-gold flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-droplet"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 text-sm">Tezkor Namlik Shimish (600 g/m²)</h4>
-                                <p class="text-gray-500 mt-0.5">Sochiq va vafli xalatlarimiz tanadagi tomchilarni bir lahzada quritadi.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3.5">
-                            <div class="w-8 h-8 rounded-full bg-parisa-forest text-parisa-gold flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-gift"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 text-sm">Zarhal Sovg'a Qutisi</h4>
-                                <p class="text-gray-500 mt-0.5">Barcha to'plamlar chiroyli va qimmatbaho brend qutilarda yetkaziladi.</p>
-                            </div>
-                        </div>
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <a href="https://t.me/Parisa_otel" target="_blank" class="bg-sky-600 hover:bg-sky-700 text-white px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition flex items-center gap-2">
+                            <i class="fa-brands fa-telegram"></i>
+                            <span>@Parisa_otel Kanaliga O'tish</span>
+                        </a>
+                        <a href="tel:+998971154666" class="bg-parisa-forest text-parisa-goldLight px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition flex items-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Menejer bilan bog'lanish</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1616627547584-bf28cee262db?auto=format&fit=crop&w=700&q=80" alt="Towel Detail" class="rounded-3xl object-cover h-64 w-full shadow-md border border-parisa-gold/20">
-                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=700&q=80" alt="Robe Detail" class="rounded-3xl object-cover h-64 w-full shadow-md border border-parisa-gold/20 mt-8">
+                <div class="lg:col-span-5">
+                    <div class="rounded-3xl overflow-hidden border border-parisa-gold/30 shadow-lg">
+                        <img src="https://cdn4.telesco.pe/file/Ha-3oCLttFR9eGGhCb4605yu0w_7HDazGki_fgamZYz6SZA6UBLWFq0JTIQE7nlwUdxtgKDIr7fS1ivVvGnxSCmV8W4TM0-J4SaFUnnB6WVfsgQO1SHv2-RzxZBxkvDjeHjc-GtcZ1xIChq4BAiKf5HwzqyVsdTKkUYgggpWl5V9NhCuAnKTmuGTEnlii61_QkfKl6RhuTJkMzka_wDiU3Su0ULonzSxVpmu4QN0faHBM2FVpCNouzzT0aCNDVLsaARgd2O7crDHG4tYkDN5k5YnqXGauLubSU9yOh3_jZOwKnXHjc6ASjPTy31ezoVeymKF127gnS0lYCYSGDko4Q.jpg" alt="Hotel Textiles" class="w-full h-72 object-cover">
+                    </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: KONTAKTLAR VA REAL LOKATSIYA -->
+    <section id="contacts" class="py-14 bg-parisa-sand border-t border-parisa-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-6 sm:p-10 border border-parisa-gold/30 shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    
+                    <div class="space-y-4">
+                        <span class="text-parisa-gold font-bold text-xs uppercase tracking-widest">Rasmiy Manzil & Shourum</span>
+                        <h3 class="font-serif text-3xl font-bold text-parisa-forest">
+                            Parisa Home Shourumiga Tashrif Buyuring
+                        </h3>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-light">
+                            Barcha matolarni ushlab ko'rish, qalinligi va yumshoqligiga o'zingiz guvoh bo'lishingiz mumkin.
+                        </p>
+
+                        <div class="space-y-3 pt-2 text-xs">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-parisa-forest text-parisa-gold flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-gray-900 block">+998 97 115 46 66</span>
+                                    <span class="text-gray-500">Ikrom Tursunxo'jayev</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-parisa-forest text-parisa-gold flex items-center justify-center shrink-0">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-gray-900 block">@Tursunkhojaev_i • @ilyos_parisa</span>
+                                    <span class="text-gray-500">Telegram orqali to'g'ridan-to'g'ri aloqa</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-parisa-forest text-parisa-gold flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-gray-900 block">Toshkent shahri, Goody (100123)</span>
+                                    <span class="text-gray-500">Parisa Home Esteri Shourumi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3">
+                            <a href="https://maps.app.goo.gl/tH5SmJKzrXd6pTM86" target="_blank" class="inline-flex items-center gap-2 forest-gradient text-parisa-goldLight px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider shadow hover:opacity-95 transition">
+                                <i class="fa-solid fa-map-location-dot text-parisa-gold"></i>
+                                <span>Google Maps da Ochish</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Map Card -->
+                    <div class="rounded-3xl overflow-hidden border border-parisa-gold/30 bg-gray-100 h-64 sm:h-80 relative flex items-center justify-center p-6 text-center">
+                        <div class="space-y-3">
+                            <i class="fa-solid fa-store text-4xl text-parisa-forest"></i>
+                            <h4 class="font-serif font-bold text-xl text-parisa-forest">Parisa Home Shourumi</h4>
+                            <p class="text-xs text-gray-500 max-w-xs mx-auto">
+                                Toshkent, Goody, 100123, Tashkent Region
+                            </p>
+                            <a href="https://maps.app.goo.gl/tH5SmJKzrXd6pTM86" target="_blank" class="inline-block bg-white border border-parisa-forest text-parisa-forest px-4 py-2 rounded-full text-xs font-bold hover:bg-parisa-forest hover:text-white transition">
+                                Xaritada yo'nalish olish 📍
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-parisa-forestDark text-white py-14 border-t border-parisa-gold/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 text-xs">
+    <footer class="bg-parisa-forestDark text-white py-12 border-t border-parisa-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 text-xs">
             
-            <div class="space-y-4">
+            <div class="space-y-3">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-full bg-parisa-forest p-1 border border-parisa-gold/40 flex items-center justify-center">
                         <img src="/static/logo.png" alt="Parisa Logo" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <span class="font-serif text-2xl font-bold text-parisa-goldLight">Parisa Home</span>
-                        <span class="text-[8px] uppercase tracking-widest text-parisa-gold block">Creating Comfort</span>
+                        <span class="text-[8px] uppercase tracking-widest text-parisa-gold block">ESTERI • VERONA HOME</span>
                     </div>
                 </div>
-                <p class="text-gray-400 leading-relaxed font-light">
-                    Uy sharoitida o'zingizni eng oliy martabali mehmon kabi his qiling. Nafis dizayn va shohona to'qimachilik uyg'unligi.
+                <p class="text-gray-400 font-light leading-relaxed">
+                    Sifat • Nafosat • Qulaylik timsoli. Barcha sochiq va xalatlarimiz tabiiy paxtadan.
                 </p>
-                <div class="flex items-center gap-3 text-parisa-gold pt-1">
-                    <a href="https://t.me/parisa_home_esteri" target="_blank" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-parisa-gold hover:text-parisa-forest transition">
-                        <i class="fa-brands fa-telegram"></i>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-sm text-parisa-goldLight font-bold mb-3 uppercase tracking-wider">Aloqa Ma'lumotlari</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Telefon: <a href="tel:+998971154666" class="text-parisa-gold font-bold">+998 97 115 46 66</a></li>
+                    <li>Menejer: Ikrom Tursunxo'jayev</li>
+                    <li>Telegram: @Tursunkhojaev_i, @ilyos_parisa</li>
+                    <li>WhatsApp: +998 97 115 46 66</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-sm text-parisa-goldLight font-bold mb-3 uppercase tracking-wider">To'lov & Nasiya</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>⚡ <b>Uzum Nasiya</b> (3, 6, 12 oyga)</li>
+                    <li>💳 <b>Click</b> orqali to'lov</li>
+                    <li>📲 <b>Payme</b> ilovasi orqali</li>
+                    <li>📦 Butun O'zbekiston bo'ylab yetkazish</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-sm text-parisa-goldLight font-bold mb-3 uppercase tracking-wider">Ijtimoiy Tarmoqlar</h4>
+                <div class="space-y-2 text-gray-400">
+                    <a href="https://t.me/parisa_home_esteri" target="_blank" class="flex items-center gap-2 hover:text-white">
+                        <i class="fa-brands fa-telegram text-sky-400"></i> @parisa_home_esteri (Kanal)
                     </a>
-                    <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-parisa-gold hover:text-parisa-forest transition">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="https://t.me/Parisa_otel" target="_blank" class="flex items-center gap-2 hover:text-white">
+                        <i class="fa-brands fa-telegram text-sky-400"></i> @Parisa_otel (Hotel to'plamlari)
+                    </a>
+                    <a href="https://instagram.com/parisa_home_esteri" target="_blank" class="flex items-center gap-2 hover:text-white">
+                        <i class="fa-brands fa-instagram text-pink-400"></i> @parisa_home_esteri (Instagram)
+                    </a>
+                    <a href="https://maps.app.goo.gl/tH5SmJKzrXd6pTM86" target="_blank" class="flex items-center gap-2 hover:text-white">
+                        <i class="fa-solid fa-location-dot text-emerald-400"></i> Shourum Lokatsiyasi
                     </a>
                 </div>
-            </div>
-
-            <div>
-                <h4 class="font-serif text-base text-parisa-goldLight font-bold mb-4 uppercase tracking-wider">Katalog</h4>
-                <ul class="space-y-2.5 text-gray-400">
-                    <li><a href="#catalog" onclick="filterCategory('robes')" class="hover:text-parisa-gold transition">Velur & Vafli Xalatlar</a></li>
-                    <li><a href="#catalog" onclick="filterCategory('towels')" class="hover:text-parisa-gold transition">6 talik Sochiqlar To'plami</a></li>
-                    <li><a href="#catalog" onclick="filterCategory('bedding')" class="hover:text-parisa-gold transition">Satin Yotoq To'plamlari</a></li>
-                    <li><a href="#catalog" onclick="filterCategory('pajamas')" class="hover:text-parisa-gold transition">Ipak Kimono va Pijamalar</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="font-serif text-base text-parisa-goldLight font-bold mb-4 uppercase tracking-wider">To'lov Tizimlari</h4>
-                <ul class="space-y-2.5 text-gray-400">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-parisa-gold"></i> <b>Uzum Nasiya</b> (3, 6, 12 oy)</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-parisa-gold"></i> <b>Click</b> orqali to'g'ridan-to'g'ri</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-parisa-gold"></i> <b>Payme</b> to'lov shlyuzi</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-parisa-gold"></i> Yetkazilganda naqd to'lash</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="font-serif text-base text-parisa-goldLight font-bold mb-4 uppercase tracking-wider">Aloqa & Buyurtma</h4>
-                <p class="text-gray-400 mb-2">Telegram: <a href="https://t.me/parisa_home_esteri" class="text-sky-400 underline">@parisa_home_esteri</a></p>
-                <p class="text-gray-400 mb-4">Yetkazib berish: Butun O'zbekiston bo'ylab 24-48 soatda</p>
-                <button onclick="toggleChat(true)" class="w-full bg-parisa-gold text-parisa-forest font-bold py-3 rounded-full text-xs uppercase tracking-wider hover:bg-parisa-goldLight transition shadow-md">
-                    Parisa AI Stilistga Yozish
-                </button>
             </div>
 
         </div>
 
-        <div class="max-w-7xl mx-auto px-4 mt-10 pt-6 border-t border-white/10 text-center text-gray-500 text-[11px]">
-            © 2026 Parisa Home (Creating Comfort). Barcha huquqlar himoyalangan.
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-4 border-t border-white/10 text-center text-gray-500 text-[11px]">
+            © 2026 Parisa Home Esteri (Creating Comfort). Barcha huquqlar himoyalangan.
         </div>
     </footer>
 
-    <!-- ==================== INTERAKTIV MODALLAR & DRAWERLAR ==================== -->
+    <!-- ==================== MODALS ==================== -->
 
-    <!-- 1. MAHSULOT DETALI MODALI -->
+    <!-- 1. DETAIL MODAL -->
     <div id="product-detail-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-2xl rounded-3xl shadow-2xl border border-parisa-gold/30 overflow-hidden flex flex-col md:flex-row max-h-[90vh]">
-            
             <div class="md:w-1/2 bg-gray-100 relative h-64 md:h-auto">
                 <img id="detail-img" src="" alt="Product" class="w-full h-full object-cover">
-                <span id="detail-badge" class="absolute top-4 left-4 bg-parisa-forest text-parisa-gold text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider"></span>
+                <span id="detail-badge" class="absolute top-3 left-3 bg-parisa-forest text-parisa-gold text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider"></span>
             </div>
-
             <div class="md:w-1/2 p-6 flex flex-col justify-between overflow-y-auto">
                 <div>
                     <div class="flex justify-between items-start">
                         <span id="detail-category" class="text-[10px] font-bold uppercase tracking-wider text-parisa-gold"></span>
-                        <button onclick="closeProductModal()" class="text-gray-400 hover:text-gray-800 text-xl">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
+                        <button onclick="closeProductModal()" class="text-gray-400 hover:text-gray-800 text-xl"><i class="fa-solid fa-xmark"></i></button>
                     </div>
-
                     <h3 id="detail-title" class="font-serif text-2xl font-bold text-gray-900 mt-1"></h3>
                     <div class="flex items-center gap-2 mt-2">
                         <span id="detail-price" class="text-2xl font-bold text-parisa-forest font-serif"></span>
                         <span id="detail-old-price" class="text-xs text-gray-400 line-through"></span>
                     </div>
-
-                    <!-- Uzum Nasiya shkalasi -->
-                    <div class="mt-4 p-3 rounded-2xl bg-parisa-uzumLight border border-purple-200">
-                        <div class="flex justify-between text-xs">
-                            <span class="font-bold text-parisa-uzum"><i class="fa-solid fa-bolt"></i> Uzum Nasiya:</span>
-                            <span id="detail-monthly" class="font-extrabold text-parisa-uzum"></span>
-                        </div>
-                        <div class="text-[10px] text-gray-500 mt-1">3, 6 va 12 oyga bo'lib to'lash imkoniyati</div>
+                    <div class="mt-3 p-3 rounded-2xl bg-parisa-uzumLight border border-purple-200 text-xs">
+                        <span class="font-bold text-parisa-uzum"><i class="fa-solid fa-bolt"></i> Uzum Nasiya:</span>
+                        <span id="detail-monthly" class="font-extrabold text-parisa-uzum ml-1"></span>
                     </div>
-
-                    <p id="detail-desc" class="text-xs text-gray-600 mt-4 leading-relaxed font-light"></p>
-
-                    <!-- Matosi -->
-                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs">
-                        <span class="font-bold text-gray-800">Mato tarkibi: </span>
+                    <p id="detail-desc" class="text-xs text-gray-600 mt-3 leading-relaxed font-light"></p>
+                    <div class="mt-3 pt-3 border-t border-gray-100 text-xs">
+                        <span class="font-bold text-gray-800">Tarkibi: </span>
                         <span id="detail-material" class="text-gray-600"></span>
                     </div>
                 </div>
-
-                <div class="pt-6 mt-4 border-t border-gray-100 flex gap-2">
-                    <button id="detail-add-btn" class="flex-1 forest-gradient text-parisa-goldLight font-bold py-3.5 rounded-full text-xs uppercase tracking-wider shadow hover:opacity-95 transition">
+                <div class="pt-4 mt-3 border-t border-gray-100">
+                    <button id="detail-add-btn" class="w-full forest-gradient text-parisa-goldLight font-bold py-3.5 rounded-full text-xs uppercase tracking-wider shadow">
                         Savatchaga Qo'shish
                     </button>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- 2. SAVATCHA (CART DRAWER) -->
+    <!-- 2. CART DRAWER -->
     <div id="cart-drawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex justify-end">
-        <div class="bg-white w-full max-w-md h-full shadow-2xl flex flex-col justify-between p-6 transform transition-transform">
-            
+        <div class="bg-white w-full max-w-md h-full shadow-2xl flex flex-col justify-between p-6">
             <div>
                 <div class="flex justify-between items-center pb-4 border-b border-gray-100">
                     <div class="flex items-center gap-2">
                         <i class="fa-solid fa-bag-shopping text-parisa-gold text-lg"></i>
                         <h3 class="font-serif text-xl font-bold text-parisa-forest">Savatchangiz</h3>
                     </div>
-                    <button onclick="closeCartDrawer()" class="text-gray-400 hover:text-gray-800 text-xl">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
+                    <button onclick="closeCartDrawer()" class="text-gray-400 hover:text-gray-800 text-xl"><i class="fa-solid fa-xmark"></i></button>
                 </div>
-
-                <div id="cart-items-container" class="divide-y divide-gray-100 max-h-[50vh] overflow-y-auto mt-4 space-y-3">
-                    <!-- Dinamik cart elementlari -->
-                </div>
+                <div id="cart-items-container" class="divide-y divide-gray-100 max-h-[50vh] overflow-y-auto mt-4 space-y-3"></div>
             </div>
-
-            <!-- Jami va Checkout tugmasi -->
-            <div class="pt-4 border-t border-gray-200 space-y-4">
+            <div class="pt-4 border-t border-gray-200 space-y-3">
                 <div class="space-y-1.5 text-xs">
-                    <div class="flex justify-between text-gray-500">
-                        <span>Mahsulotlar soni:</span>
-                        <span id="cart-total-qty" class="font-bold">0 ta</span>
-                    </div>
                     <div class="flex justify-between text-base font-bold text-parisa-forest">
                         <span>Jami summa:</span>
                         <span id="cart-total-price" class="font-serif text-xl">0 so'm</span>
@@ -474,41 +512,32 @@
                         <span id="cart-monthly-payment" class="font-extrabold text-parisa-uzum">oyiga 0 so'm</span>
                     </div>
                 </div>
-
-                <button onclick="openCheckoutModal()" class="w-full forest-gradient text-parisa-goldLight font-bold py-4 rounded-full text-xs uppercase tracking-widest shadow-lg hover:opacity-95 transition">
+                <button onclick="openCheckoutModal()" class="w-full forest-gradient text-parisa-goldLight font-bold py-4 rounded-full text-xs uppercase tracking-widest shadow-lg">
                     Buyurtmani Rasmiylashtirish
                 </button>
             </div>
-
         </div>
     </div>
 
-    <!-- 3. CHECKOUT MODAL (UZUM NASIYA, CLICK, PAYME TANLOVI) -->
+    <!-- 3. CHECKOUT MODAL -->
     <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl border border-parisa-gold/30 overflow-hidden">
-            
             <div class="bg-parisa-forest text-parisa-goldLight p-5 flex justify-between items-center">
                 <div>
                     <span class="text-[10px] text-parisa-gold uppercase tracking-widest font-bold">Rasmiy Buyurtma</span>
-                    <h3 class="font-serif text-xl font-bold">Parisa Home Checkout</h3>
+                    <h3 class="font-serif text-xl font-bold">Parisa Home Esteri</h3>
                 </div>
-                <button onclick="closeCheckoutModal()" class="text-white/80 hover:text-white text-xl">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
+                <button onclick="closeCheckoutModal()" class="text-white/80 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
             </div>
-
-            <form onsubmit="handleCheckoutSubmit(event)" class="p-6 space-y-4 max-h-[80vh] overflow-y-auto text-xs">
-                
+            <form onsubmit="handleCheckoutSubmit(event)" class="p-6 space-y-3 max-h-[80vh] overflow-y-auto text-xs">
                 <div>
                     <label class="block font-bold text-gray-700 mb-1">Ism va Familiyangiz *</label>
                     <input type="text" id="order-name" required placeholder="Masalan: Nilufar Usmonova" class="w-full border border-gray-300 rounded-xl px-3.5 py-2.5 focus:outline-none focus:border-parisa-forest">
                 </div>
-
                 <div>
                     <label class="block font-bold text-gray-700 mb-1">Telefon Raqamingiz *</label>
                     <input type="tel" id="order-phone" required placeholder="+998 90 123 45 67" class="w-full border border-gray-300 rounded-xl px-3.5 py-2.5 focus:outline-none focus:border-parisa-forest">
                 </div>
-
                 <div class="grid grid-cols-2 gap-3">
                     <div>
                         <label class="block font-bold text-gray-700 mb-1">Shahar / Viloyat *</label>
@@ -531,37 +560,30 @@
                     <div>
                         <label class="block font-bold text-gray-700 mb-1">Yetkazib Berish</label>
                         <div class="border border-gray-200 rounded-xl px-3 py-2.5 bg-gray-50 text-emerald-700 font-bold flex items-center justify-between">
-                            <span>Bepul (Kuryer)</span>
+                            <span>Bepul Kuryer</span>
                             <i class="fa-solid fa-truck"></i>
                         </div>
                     </div>
                 </div>
-
                 <div>
                     <label class="block font-bold text-gray-700 mb-1">Yetkazish Manzili *</label>
                     <input type="text" id="order-address" required placeholder="Tuman, ko'cha, uy/xonadon" class="w-full border border-gray-300 rounded-xl px-3.5 py-2.5 focus:outline-none focus:border-parisa-forest">
                 </div>
 
-                <!-- TO'LOV USULI TANLOVI -->
                 <div>
-                    <label class="block font-bold text-gray-700 mb-2">To'lov Usulini Tanlang *</label>
+                    <label class="block font-bold text-gray-700 mb-2">To'lov Usuli *</label>
                     <div class="space-y-2">
-                        
-                        <!-- 1. Uzum Nasiya (Bo'lib to'lash) -->
                         <label class="flex items-center justify-between p-3 rounded-2xl border-2 border-purple-400 bg-purple-50/50 cursor-pointer">
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-2">
                                 <input type="radio" name="payment_method" value="uzum_nasiya" checked onchange="toggleInstallmentOptions(true)" class="accent-parisa-uzum">
                                 <div>
-                                    <div class="font-bold text-parisa-uzum flex items-center gap-1.5">
-                                        <i class="fa-solid fa-bolt"></i> Uzum Nasiya (Bo'lib to'lash)
-                                    </div>
-                                    <div class="text-[10px] text-gray-500">Boshlang'ich to'lov 0 so'm, 3-12 oyga</div>
+                                    <div class="font-bold text-parisa-uzum flex items-center gap-1"><i class="fa-solid fa-bolt"></i> Uzum Nasiya</div>
+                                    <div class="text-[10px] text-gray-500">0% boshlang'ich, 3-12 oyga</div>
                                 </div>
                             </div>
-                            <span class="bg-parisa-uzum text-white font-bold text-[9px] px-2 py-0.5 rounded">Tavsiya</span>
+                            <span class="bg-parisa-uzum text-white text-[9px] font-bold px-2 py-0.5 rounded">Tavsiya</span>
                         </label>
 
-                        <!-- Uzum Nasiya muddat tanlovi -->
                         <div id="installment-months-box" class="grid grid-cols-3 gap-2 pl-6 pt-1">
                             <label class="p-2 border border-purple-300 rounded-xl text-center cursor-pointer bg-white">
                                 <input type="radio" name="inst_months" value="3" class="accent-parisa-uzum">
@@ -577,93 +599,70 @@
                             </label>
                         </div>
 
-                        <!-- 2. Click -->
                         <label class="flex items-center justify-between p-3 rounded-2xl border border-gray-200 bg-white cursor-pointer hover:border-emerald-500">
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-2">
                                 <input type="radio" name="payment_method" value="click" onchange="toggleInstallmentOptions(false)" class="accent-emerald-600">
-                                <div>
-                                    <div class="font-bold text-gray-800">Click (Karta orqali to'liq)</div>
-                                    <div class="text-[10px] text-gray-500">Bir martalik to'lov</div>
-                                </div>
+                                <div class="font-bold text-gray-800">Click (Karta)</div>
                             </div>
                             <span class="text-xs font-bold text-emerald-600">Click 💳</span>
                         </label>
 
-                        <!-- 3. Payme -->
                         <label class="flex items-center justify-between p-3 rounded-2xl border border-gray-200 bg-white cursor-pointer hover:border-cyan-500">
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-2">
                                 <input type="radio" name="payment_method" value="payme" onchange="toggleInstallmentOptions(false)" class="accent-cyan-600">
-                                <div>
-                                    <div class="font-bold text-gray-800">Payme</div>
-                                    <div class="text-[10px] text-gray-500">Bir martalik to'lov</div>
-                                </div>
+                                <div class="font-bold text-gray-800">Payme</div>
                             </div>
                             <span class="text-xs font-bold text-cyan-600">Payme 📲</span>
                         </label>
                     </div>
                 </div>
 
-                <div class="pt-3">
-                    <button type="submit" id="checkout-submit-btn" class="w-full forest-gradient text-parisa-goldLight font-bold py-4 rounded-full text-xs uppercase tracking-widest shadow-lg hover:opacity-95 transition flex items-center justify-center gap-2">
-                        <span>To'lovga O'tish</span>
-                        <i class="fa-solid fa-arrow-right text-parisa-gold"></i>
+                <div class="pt-2">
+                    <button type="submit" id="checkout-submit-btn" class="w-full forest-gradient text-parisa-goldLight font-bold py-3.5 rounded-full text-xs uppercase tracking-widest shadow-lg">
+                        To'lovga O'tish
                     </button>
                 </div>
-
             </form>
         </div>
     </div>
 
-    <!-- 4. PARISA AI STILIST CHAT WIDGET -->
+    <!-- 4. PARISA AI CHAT -->
     <div id="ai-chat-box" class="fixed bottom-4 right-4 z-50 w-full max-w-sm sm:max-w-md hidden">
         <div class="bg-white rounded-3xl shadow-2xl border border-parisa-gold/30 overflow-hidden flex flex-col h-[520px]">
-            
             <div class="bg-parisa-forest text-parisa-goldLight p-4 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-white/10 border border-parisa-gold/40 p-1 flex items-center justify-center">
-                        <img src="/static/logo.png" alt="Parisa AI" class="w-full h-full object-contain">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-white/10 border border-parisa-gold/40 p-1 flex items-center justify-center">
+                        <img src="/static/logo.png" class="w-full h-full object-contain">
                     </div>
                     <div>
-                        <h4 class="font-serif font-bold text-base text-parisa-goldLight">Parisa AI Stilist</h4>
-                        <span class="text-[10px] text-parisa-gold block">Qulaylik & Razmer Maslahatchisi</span>
+                        <h4 class="font-serif font-bold text-sm text-parisa-goldLight">Parisa AI Stilist</h4>
+                        <span class="text-[9px] text-parisa-gold block">+998 97 115 46 66 (Ikrom)</span>
                     </div>
                 </div>
-                <button onclick="toggleChat(false)" class="text-white/80 hover:text-white text-base">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
+                <button onclick="toggleChat(false)" class="text-white/80 hover:text-white text-base"><i class="fa-solid fa-xmark"></i></button>
             </div>
-
-            <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3 bg-[#FAF8F5] text-xs">
-                <!-- Xabarlar -->
+            <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3 bg-[#FAF8F5] text-xs"></div>
+            <div class="p-2 bg-white border-t border-gray-100 flex gap-1.5 overflow-x-auto whitespace-nowrap text-[10px]">
+                <button onclick="sendQuickMessage('Uzum Nasiya shartlari')" class="bg-purple-50 text-parisa-uzum px-2.5 py-1 rounded-full border border-purple-200">⚡ Uzum Nasiya</button>
+                <button onclick="sendQuickMessage('Havana D.272 xalati haqida')" class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-full border border-gray-200">👑 Havana Xalat</button>
+                <button onclick="sendQuickMessage('Shourum manzili va telefon')" class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-full border border-gray-200">📍 Manzil & Telefon</button>
             </div>
-
-            <!-- Quick prompts -->
-            <div class="p-2 bg-white border-t border-gray-100 flex gap-1.5 overflow-x-auto whitespace-nowrap text-[11px]">
-                <button onclick="sendQuickMessage('Uzum Nasiya qanday ishlaydi?')" class="bg-purple-50 text-parisa-uzum px-2.5 py-1 rounded-full border border-purple-200 font-medium">⚡ Uzum Nasiya</button>
-                <button onclick="sendQuickMessage('Xalat razmerini qanday tanlayman?')" class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-full border border-gray-200">📏 Razmerlar</button>
-                <button onclick="sendQuickMessage('Sochiqlar qanday upakovkada keladi?')" class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-full border border-gray-200">🎁 Sovg'a to'plam</button>
-            </div>
-
             <div class="p-3 bg-white border-t border-gray-200 flex items-center gap-2">
-                <input type="text" id="chat-input" onkeypress="if(event.key === 'Enter') sendChatMessage()" placeholder="Parisa AI dan maslahat so'rang..." class="flex-1 text-xs border border-gray-300 rounded-xl px-3.5 py-2.5 focus:outline-none focus:border-parisa-forest">
-                <button onclick="sendChatMessage()" class="bg-parisa-forest text-parisa-gold p-2.5 rounded-xl hover:bg-parisa-forestLight transition shrink-0">
-                    <i class="fa-solid fa-paper-plane text-xs"></i>
-                </button>
+                <input type="text" id="chat-input" onkeypress="if(event.key === 'Enter') sendChatMessage()" placeholder="Savolingizni yozing..." class="flex-1 text-xs border border-gray-300 rounded-xl px-3 py-2 focus:outline-none focus:border-parisa-forest">
+                <button onclick="sendChatMessage()" class="bg-parisa-forest text-parisa-gold p-2.5 rounded-xl"><i class="fa-solid fa-paper-plane text-xs"></i></button>
             </div>
-
         </div>
     </div>
 
-    <!-- Floating Chat Trigger -->
+    <!-- Floating Chat Button -->
     <div class="fixed bottom-6 right-6 z-40">
-        <button onclick="toggleChat(true)" class="relative forest-gradient text-parisa-goldLight p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl flex items-center gap-2 hover:scale-105 transition duration-200 border border-parisa-gold/40">
+        <button onclick="toggleChat(true)" class="forest-gradient text-parisa-goldLight p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl flex items-center gap-2 border border-parisa-gold/40 hover:scale-105 transition">
             <i class="fa-solid fa-sparkles text-parisa-gold"></i>
-            <span class="hidden sm:inline font-bold text-xs">Parisa AI Stilist</span>
+            <span class="hidden sm:inline font-bold text-xs">Parisa AI</span>
             <span class="w-2.5 h-2.5 rounded-full bg-parisa-gold animate-ping"></span>
         </button>
     </div>
 
-    <!-- APPLICATION SCRIPTS -->
     <script>
         let catalog = null;
         let cart = JSON.parse(localStorage.getItem('parisa_cart') || '[]');
@@ -684,44 +683,39 @@
             const container = document.getElementById('products-grid');
             container.innerHTML = items.map(p => `
                 <div class="bg-white rounded-3xl overflow-hidden border border-parisa-gold/20 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                    <div class="relative overflow-hidden h-72 bg-gray-50">
+                    <div class="relative overflow-hidden h-64 bg-gray-50">
                         <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 left-3 bg-parisa-forest text-parisa-gold text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                        <span class="absolute top-3 left-3 bg-parisa-forest text-parisa-gold text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow">
                             ${p.badge}
                         </span>
-                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] font-bold flex items-center gap-1 text-amber-500 shadow-sm">
-                            <i class="fa-solid fa-star text-[10px]"></i>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold flex items-center gap-1 text-amber-500 shadow-sm">
+                            <i class="fa-solid fa-star text-[9px]"></i>
                             <span>${p.rating}</span>
-                            <span class="text-gray-400 font-normal">(${p.reviews_count})</span>
                         </div>
                     </div>
 
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-parisa-gold">${p.category_name}</span>
-                            <h3 class="font-serif text-xl font-bold text-gray-900 group-hover:text-parisa-forest transition line-clamp-1">${p.title}</h3>
-                            <p class="text-xs text-gray-500 line-clamp-2 font-light">${p.description}</p>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[9px] font-bold uppercase tracking-wider text-parisa-gold">${p.category_name}</span>
+                            <h3 class="font-serif text-lg font-bold text-gray-900 group-hover:text-parisa-forest transition line-clamp-1">${p.title}</h3>
+                            <p class="text-[11px] text-gray-500 line-clamp-2 mt-1 font-light">${p.description}</p>
                             
-                            <!-- Narxlar -->
                             <div class="pt-2 flex items-baseline gap-2">
-                                <span class="font-serif text-2xl font-bold text-parisa-forest">${p.price.toLocaleString('ru-RU')} so'm</span>
-                                <span class="text-xs text-gray-400 line-through">${p.old_price.toLocaleString('ru-RU')} so'm</span>
+                                <span class="font-serif text-xl font-bold text-parisa-forest">${p.price.toLocaleString('ru-RU')} so'm</span>
+                                <span class="text-[11px] text-gray-400 line-through">${p.old_price.toLocaleString('ru-RU')} so'm</span>
                             </div>
 
-                            <!-- Uzum Nasiya qulayligi -->
-                            <div class="p-2.5 rounded-2xl bg-parisa-uzumLight border border-purple-200 flex justify-between items-center text-xs">
-                                <span class="text-parisa-uzum font-bold flex items-center gap-1">
-                                    <i class="fa-solid fa-bolt"></i> Uzum Nasiya:
-                                </span>
+                            <div class="p-2 rounded-xl bg-parisa-uzumLight border border-purple-200 flex justify-between items-center text-[11px] mt-2">
+                                <span class="text-parisa-uzum font-bold flex items-center gap-1"><i class="fa-solid fa-bolt"></i> Uzum Nasiya:</span>
                                 <span class="font-extrabold text-parisa-uzum">oyiga ${p.uzum_installment['12_months'].toLocaleString('ru-RU')} so'm</span>
                             </div>
                         </div>
 
-                        <div class="pt-5 mt-4 border-t border-gray-100 flex gap-2">
-                            <button onclick="openProductModal('${p.id}')" class="flex-1 bg-white border border-parisa-forest text-parisa-forest hover:bg-gray-50 py-3 rounded-full text-xs font-semibold uppercase tracking-wider transition">
+                        <div class="pt-3 border-t border-gray-100 flex gap-2">
+                            <button onclick="openProductModal('${p.id}')" class="flex-1 bg-white border border-parisa-forest text-parisa-forest py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition">
                                 Tafsilot
                             </button>
-                            <button onclick="addToCart('${p.id}')" class="flex-1 forest-gradient text-parisa-goldLight hover:opacity-95 py-3 rounded-full text-xs font-semibold uppercase tracking-wider transition flex items-center justify-center gap-1.5 shadow-md">
+                            <button onclick="addToCart('${p.id}')" class="flex-1 forest-gradient text-parisa-goldLight py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition flex items-center justify-center gap-1.5 shadow-md">
                                 <i class="fa-solid fa-bag-shopping text-parisa-gold"></i>
                                 <span>Savatchaga</span>
                             </button>
@@ -733,13 +727,12 @@
 
         function filterCategory(catId) {
             document.querySelectorAll('.cat-btn').forEach(btn => {
-                btn.className = "cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition border border-parisa-gold/20 shadow-xs";
+                btn.className = "cat-btn bg-white hover:bg-parisa-forest hover:text-white text-gray-700 px-4 py-2 rounded-full text-xs font-semibold uppercase transition border border-parisa-gold/20 shadow-xs";
             });
             const activeBtn = document.getElementById(`cat-${catId}`);
             if (activeBtn) {
-                activeBtn.className = "cat-btn bg-parisa-forest text-parisa-goldLight px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition shadow-sm";
+                activeBtn.className = "cat-btn bg-parisa-forest text-parisa-goldLight px-4 py-2 rounded-full text-xs font-bold uppercase transition shadow-xs";
             }
-
             if (!catalog) return;
             if (catId === 'all') {
                 renderProducts(catalog.products);
@@ -748,7 +741,6 @@
             }
         }
 
-        // MAHSULOT MODALI
         function openProductModal(prodId) {
             const p = catalog.products.find(x => x.id === prodId);
             if (!p) return;
@@ -764,7 +756,6 @@
 
             const btn = document.getElementById('detail-add-btn');
             btn.onclick = () => { addToCart(p.id); closeProductModal(); };
-
             document.getElementById('product-detail-modal').classList.remove('hidden');
         }
 
@@ -772,7 +763,6 @@
             document.getElementById('product-detail-modal').classList.add('hidden');
         }
 
-        // SAVATCHA FUNKSIYALARI
         function addToCart(prodId) {
             const p = catalog.products.find(x => x.id === prodId);
             if (!p) return;
@@ -802,9 +792,7 @@
         function updateCartUI() {
             const totalQty = cart.reduce((acc, i) => acc + i.quantity, 0);
             const totalPrice = cart.reduce((acc, i) => acc + (i.price * i.quantity), 0);
-            
             document.getElementById('cart-count-badge').innerText = totalQty;
-            document.getElementById('cart-total-qty').innerText = totalQty + " ta";
             document.getElementById('cart-total-price').innerText = totalPrice.toLocaleString('ru-RU') + " so'm";
             
             const monthly = Math.round((totalPrice * 0.11));
@@ -812,11 +800,11 @@
 
             const container = document.getElementById('cart-items-container');
             if (cart.length === 0) {
-                container.innerHTML = `<div class="p-8 text-center text-gray-400 text-xs">Savatchangiz bo'sh</div>`;
+                container.innerHTML = `<div class="p-6 text-center text-gray-400 text-xs">Savatchangiz bo'sh</div>`;
                 return;
             }
             container.innerHTML = cart.map((item, idx) => `
-                <div class="py-3 flex items-center justify-between gap-3 text-xs">
+                <div class="py-2.5 flex items-center justify-between gap-3 text-xs">
                     <img src="${item.image}" class="w-12 h-12 rounded-xl object-cover shrink-0">
                     <div class="flex-1">
                         <h4 class="font-bold text-gray-900 line-clamp-1">${item.title}</h4>
@@ -833,42 +821,25 @@
 
         function changeQty(idx, delta) {
             cart[idx].quantity += delta;
-            if (cart[idx].quantity <= 0) {
-                cart.splice(idx, 1);
-            }
+            if (cart[idx].quantity <= 0) cart.splice(idx, 1);
             saveCart();
             updateCartUI();
         }
 
-        function openCartDrawer() {
-            document.getElementById('cart-drawer').classList.remove('hidden');
-        }
+        function openCartDrawer() { document.getElementById('cart-drawer').classList.remove('hidden'); }
+        function closeCartDrawer() { document.getElementById('cart-drawer').classList.add('hidden'); }
 
-        function closeCartDrawer() {
-            document.getElementById('cart-drawer').classList.add('hidden');
-        }
-
-        // CHECKOUT
         function openCheckoutModal() {
-            if (cart.length === 0) {
-                alert("Avval mahsulot tanlang!");
-                return;
-            }
+            if (cart.length === 0) { alert("Avval mahsulot tanlang!"); return; }
             closeCartDrawer();
             document.getElementById('checkout-modal').classList.remove('hidden');
         }
-
-        function closeCheckoutModal() {
-            document.getElementById('checkout-modal').classList.add('hidden');
-        }
+        function closeCheckoutModal() { document.getElementById('checkout-modal').classList.add('hidden'); }
 
         function toggleInstallmentOptions(show) {
             const box = document.getElementById('installment-months-box');
-            if (show) {
-                box.classList.remove('hidden');
-            } else {
-                box.classList.add('hidden');
-            }
+            if (show) box.classList.remove('hidden');
+            else box.classList.add('hidden');
         }
 
         async function handleCheckoutSubmit(e) {
@@ -908,24 +879,21 @@
                 });
                 const data = await res.json();
                 if (data.status === 'success') {
-                    alert(`✅ Buyurtmangiz qabul qilindi!\n\nBuyurtma raqami: ${data.order.order_id}\nTo'lov usuli: ${paymentMethod.toUpperCase()}\n\nHozir to'lov oynasiga yo'naltirilasiz.`);
+                    alert(`✅ Buyurtmangiz qabul qilindi!\n\nBuyurtma raqami: ${data.order.order_id}\nTo'lov usuli: ${paymentMethod.toUpperCase()}\n\nMenejerimiz (Ikrom: +998 97 115 46 66) tez orada siz bilan bog'lanadi.`);
                     cart = [];
                     saveCart();
                     updateCartUI();
                     closeCheckoutModal();
-                    if (data.payment_url) {
-                        window.open(data.payment_url, '_blank');
-                    }
+                    if (data.payment_url) window.open(data.payment_url, '_blank');
                 }
             } catch (err) {
-                alert("Xatolik yuz berdi: " + err);
+                alert("Xatolik: " + err);
             } finally {
                 btn.disabled = false;
-                btn.innerHTML = `<span>To'lovga O'tish</span> <i class="fa-solid fa-arrow-right text-parisa-gold"></i>`;
+                btn.innerHTML = `<span>To'lovga O'tish</span>`;
             }
         }
 
-        // PARISA AI CHAT
         function toggleChat(show) {
             const box = document.getElementById('ai-chat-box');
             if (show) box.classList.remove('hidden');
@@ -934,13 +902,14 @@
 
         function initWelcomeChat() {
             document.getElementById('chat-messages').innerHTML = `
-                <div class="flex gap-2.5 items-start">
+                <div class="flex gap-2 items-start">
                     <div class="w-7 h-7 rounded-full bg-parisa-forest p-1 border border-parisa-gold shrink-0">
                         <img src="/static/logo.png" class="w-full h-full object-contain">
                     </div>
                     <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-gray-100 shadow-sm text-gray-800 leading-relaxed text-xs">
-                        Assalomu alaykum! 🌿 Men <b>Parisa AI</b> shaxsiy stilistingizman.<br><br>
-                        Xalat va sochiq to'plamlarimiz bo'yicha maslahat berishim yoki <b>Uzum Nasiya (bo'lib to'lash)</b> shartlarini hisoblab berishim mumkin.
+                        Assalomu alaykum! 🌿 **Parisa Home Esteri** rasmiy do'koniga xush kelibsiz.<br><br>
+                        Menejerimiz: Ikrom Tursunxo'jayev (+998 97 115 46 66).<br>
+                        Havana D.272 xalati, sochiqlar va **Uzum Nasiya** shartlari bo'yicha yordam beraymi?
                     </div>
                 </div>
             `;
@@ -955,7 +924,6 @@
             const input = document.getElementById('chat-input');
             const msg = input.value.trim();
             if (!msg) return;
-
             input.value = '';
             const container = document.getElementById('chat-messages');
 
@@ -971,7 +939,7 @@
             const typingId = 'typing-' + Date.now();
             container.innerHTML += `
                 <div id="${typingId}" class="flex gap-2 items-center text-gray-400 text-[11px]">
-                    <span>Parisa AI maslahat bermoqda...</span>
+                    <span>Parisa AI yozmoqda...</span>
                 </div>
             `;
             container.scrollTop = container.scrollHeight;
@@ -987,7 +955,7 @@
 
                 const formatted = data.reply.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
                 container.innerHTML += `
-                    <div class="flex gap-2.5 items-start">
+                    <div class="flex gap-2 items-start">
                         <div class="w-7 h-7 rounded-full bg-parisa-forest p-1 border border-parisa-gold shrink-0">
                             <img src="/static/logo.png" class="w-full h-full object-contain">
                         </div>
@@ -1003,9 +971,8 @@
                             ${a}
                         </button>
                     `).join('');
-                    container.innerHTML += `<div class="flex flex-wrap gap-1.5 pt-1 pl-9">${acts}</div>`;
+                    container.innerHTML += `<div class="flex flex-wrap gap-1.5 pt-1 pl-8">${acts}</div>`;
                 }
-
                 container.scrollTop = container.scrollHeight;
             } catch (err) {
                 document.getElementById(typingId)?.remove();
